@@ -3,743 +3,768 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wire-Free Push-Up Bra - Nyaman & Menawan Tanpa Kawat</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        :root {
-            --primary: #ff4d8d;
-            --secondary: #ff8a5c;
-            --dark: #2d2d2d;
-            --light: #ffffff;
-            --accent: #ffd166;
-            --text: #333333;
-            --gray: #f5f5f5;
+    <title>Denim Shoulder | Tas Minimalis Elegan | Navaofficial</title>
+    <meta name="description" content="Tas Denim Shoulder elegan dengan material sintetis tahan lama. Warna Light Denim & Deep Denim. Beli sekarang dengan harga spesial Rp 188.000!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#000000',
+                        secondary: '#4a4a4a',
+                        lightGray: '#9a9a9a',
+                        silverAccent: '#c0c0c0',
+                        denimLight: '#8db4d9',
+                        denimDeep: '#3a5f8a'
+                    },
+                    fontFamily: {
+                        heading: ['Playfair Display', 'serif'],
+                        body: ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite'
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' }
+                        }
+                    }
+                }
+            }
         }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    </script>
+    
+    <style>
+        html {
+            scroll-behavior: smooth;
         }
         
         body {
-            background-color: var(--light);
-            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            color: #4a4a4a;
             overflow-x: hidden;
         }
         
-        /* Gradient Neon Header */
-        .hero {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
-            animation: pulse 8s infinite alternate;
-        }
-        
-        @keyframes pulse {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            position: relative;
-        }
-        
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-        }
-        
-        .logo {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: var(--light);
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .discount-badge {
-            background-color: var(--accent);
-            color: var(--dark);
-            padding: 0.5rem 1rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 1.2rem;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            animation: pulse 2s infinite;
-        }
-        
-        .hero-content {
-            padding: 3rem 0;
-            position: relative;
-            z-index: 1;
-        }
-        
-        h1 {
-            font-size: 2.8rem;
-            margin-bottom: 1rem;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        
-        .tagline {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            font-weight: 300;
-        }
-        
-        .price {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
-        .old-price {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            color: rgba(255,255,255,0.7);
-        }
-        
-        .new-price {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--accent);
-        }
-        
-        .cta-button {
-            background-color: var(--accent);
-            color: var(--dark);
-            border: none;
-            padding: 1rem 2rem;
-            font-size: 1.2rem;
-            font-weight: 700;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            display: inline-block;
-            margin-bottom: 2rem;
-        }
-        
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
-        }
-        
-        .countdown {
-            background-color: rgba(0,0,0,0.2);
-            padding: 1rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-            display: inline-block;
-        }
-        
-        .countdown-text {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-        
-        .countdown-item {
-            background-color: rgba(0,0,0,0.3);
-            padding: 0.5rem;
-            border-radius: 5px;
-            min-width: 50px;
-        }
-        
-        .countdown-number {
-            font-size: 1.5rem;
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
             font-weight: 700;
         }
         
-        .countdown-label {
-            font-size: 0.7rem;
-            text-transform: uppercase;
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         
-        /* Product Section */
-        .section {
-            padding: 4rem 0;
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            color: var(--primary);
+        .zoom-effect {
+            transition: transform 0.5s ease;
         }
         
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .zoom-effect:hover {
+            transform: scale(1.05);
         }
         
-        .product-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
         
-        .product-card:hover {
-            transform: translateY(-10px);
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
         }
         
-        .product-image {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
         }
         
-        .product-info {
-            padding: 1.5rem;
-        }
-        
-        .product-name {
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
-            color: var(--dark);
-        }
-        
-        .product-description {
-            color: #666;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        
-        .product-price {
-            font-weight: 700;
-            color: var(--primary);
-            font-size: 1.2rem;
-        }
-        
-        /* Features Section */
-        .features {
-            background-color: var(--gray);
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-        
-        .feature-card {
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        .sticky-cta.active {
+            transform: translateY(0);
         }
         
         .feature-icon {
-            font-size: 2.5rem;
-            color: var(--primary);
-            margin-bottom: 1rem;
-        }
-        
-        .feature-title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--dark);
-        }
-        
-        .feature-text {
-            color: #666;
-            line-height: 1.5;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-        }
-        
-        .testimonials .section-title {
-            color: white;
-        }
-        
-        .testimonial-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-        
-        .testimonial-card {
-            background-color: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        
-        .testimonial-text {
-            font-style: italic;
-            margin-bottom: 1rem;
-            line-height: 1.5;
-        }
-        
-        .testimonial-author {
-            font-weight: 700;
-        }
-        
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1rem;
-        }
-        
-        .faq-question {
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            background: rgba(192, 192, 192, 0.15);
         }
         
-        .faq-answer {
-            color: #666;
-            line-height: 1.5;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-        }
-        
-        .faq-answer.active {
-            max-height: 200px;
-        }
-        
-        /* Footer CTA */
-        .footer-cta {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        .countdown-item {
+            min-width: 70px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            background: rgba(0, 0, 0, 0.8);
             color: white;
-            text-align: center;
-            padding: 4rem 0;
+            font-weight: 600;
         }
         
-        .footer-cta .cta-button {
+        .countdown-item span:first-child {
             font-size: 1.5rem;
-            padding: 1.2rem 3rem;
+            font-weight: 700;
         }
         
-        /* Responsive */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             }
             
-            .tagline {
-                font-size: 1.2rem;
-            }
-            
-            .new-price {
-                font-size: 2rem;
-            }
-            
-            .old-price {
-                font-size: 1.2rem;
-            }
-            
-            .section-title {
-                font-size: 1.8rem;
+            .parallax {
+                background-attachment: scroll;
             }
         }
         
-        /* Popup */
-        .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            background-color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 5px 30px rgba(0,0,0,0.3);
-            z-index: 1000;
-            max-width: 500px;
-            width: 90%;
-            transition: transform 0.3s ease;
-        }
-        
-        .popup.active {
-            transform: translate(-50%, -50%) scale(1);
-        }
-        
-        .popup-overlay {
+        .lightbox {
             position: fixed;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 999;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             opacity: 0;
             pointer-events: none;
             transition: opacity 0.3s ease;
         }
         
-        .popup-overlay.active {
+        .lightbox.active {
             opacity: 1;
             pointer-events: all;
         }
         
-        .popup-close {
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .lightbox-close {
             position: absolute;
-            top: 1rem;
-            right: 1rem;
-            font-size: 1.5rem;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 2rem;
             cursor: pointer;
-            color: #666;
         }
         
-        .popup-title {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
+        .price-tag {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-weight: bold;
         }
         
-        .popup-text {
-            margin-bottom: 1.5rem;
-            line-height: 1.5;
+        .discount-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #ff4136;
+            color: white;
+            font-weight: bold;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
         }
     </style>
 </head>
 <body>
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-primary font-heading">Navaofficial</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#hero" class="text-primary hover:text-silverAccent transition">Beranda</a>
+                    <a href="#features" class="text-primary hover:text-silverAccent transition">Fitur</a>
+                    <a href="#gallery" class="text-primary hover:text-silverAccent transition">Galeri</a>
+                    <a href="#pricing" class="text-primary hover:text-silverAccent transition">Harga</a>
+                    <a href="#order" class="text-primary hover:text-silverAccent transition">Pesan</a>
+                </nav>
+                
+                <div class="hidden md:block">
+                    <a href="https://wa.me/6281252355305" target="_blank" class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i> Chat via WA
+                    </a>
+                </div>
+                
+                <button class="md:hidden text-primary text-2xl" id="mobile-menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-white py-4 px-4 border-t" id="mobile-menu">
+            <div class="flex flex-col space-y-4">
+                <a href="#hero" class="text-primary hover:text-silverAccent transition">Beranda</a>
+                <a href="#features" class="text-primary hover:text-silverAccent transition">Fitur</a>
+                <a href="#gallery" class="text-primary hover:text-silverAccent transition">Galeri</a>
+                <a href="#pricing" class="text-primary hover:text-silverAccent transition">Harga</a>
+                <a href="#order" class="text-primary hover:text-silverAccent transition">Pesan</a>
+                <a href="https://wa.me/6281252355305" target="_blank" class="bg-primary hover:bg-secondary text-white px-5 py-2 rounded-full transition text-center flex items-center justify-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Chat via WA
+                </a>
+            </div>
+        </div>
+    </header>
+
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="header">
-                <div class="logo">NAVA</div>
-                <div class="discount-badge">DISKON 45%</div>
+    <section id="hero" class="pt-24 pb-20 md:pt-32 md:pb-28 bg-cover bg-center relative" style="background-image: url('https://nava.orderonline.id/denim-bag');">
+        <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-85"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <div class="scroll-reveal">
+                    <span class="text-silverAccent text-lg md:text-xl font-bold tracking-wider">TREND TERBARU 2025</span>
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mt-4 mb-6 leading-tight">
+                        Denim Shoulder Bag <br><span class="text-silverAccent">Elegan & Minimalis</span>
+                    </h1>
+                    <p class="text-white text-lg md:text-xl mb-8 opacity-90">
+                        Tas elegan dengan material sintetis tahan lama, gaya retro chic, dan tekstur halus yang sempurna untuk penampilan kasual maupun formal.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center gap-4 mb-10">
+                        <div class="flex items-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-truck text-white text-2xl"></i>
+                            </div>
+                            <span class="text-white ml-2">Pengiriman Cepat</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt text-white text-2xl"></i>
+                            </div>
+                            <span class="text-white ml-2">Garansi 1 Tahun</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="feature-icon">
+                                <i class="fas fa-box text-white text-2xl"></i>
+                            </div>
+                            <span class="text-white ml-2">Original Product</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#order" class="bg-silverAccent hover:bg-white text-primary font-bold py-3 px-8 rounded-full text-lg transition transform hover:scale-105">
+                            Pesan Sekarang
+                        </a>
+                        <a href="#gallery" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary font-bold py-3 px-8 rounded-full text-lg transition">
+                            Lihat Detail <i class="fas fa-arrow-down ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Product Image -->
+        <div class="hidden lg:block absolute right-32 bottom-10 z-10 animation-float w-96">
+            <div class="relative">
+                <img src="https://nava.orderonline.id/denim-bag" alt="Denim Shoulder Bag" class="rounded-xl shadow-2xl border-4 border-white animation-float">
+                <div class="discount-badge">
+                    <span class="text-xs">Hemat</span>
+                    <span class="text-lg">37%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-silverAccent font-bold text-lg">KEUNGGULAN PRODUK</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mt-3 mb-6">Fitur Eksklusif Denim Shoulder Bag</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Dirancang khusus untuk wanita modern yang mengutamakan gaya dan fungsionalitas</p>
             </div>
             
-            <div class="hero-content">
-                <h1>Wire-Free Push-Up Bra</h1>
-                <p class="tagline">Nyaman Tanpa Kawat, Tetap Menawan Sepanjang Hari</p>
-                
-                <div class="price">
-                    <span class="old-price">Rp 320.000</span>
-                    <span class="new-price">Rp 178.000</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition scroll-reveal">
+                    <div class="feature-icon bg-denimLight/10 text-denimLight">
+                        <i class="fas fa-gem text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Material Premium</h3>
+                    <p class="text-gray-600">Material sintetis berkualitas tinggi yang tahan lama dan mudah dibersihkan.</p>
                 </div>
                 
-                <a href="#order" class="cta-button">PESAN SEKARANG</a>
+                <!-- Feature 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition scroll-reveal">
+                    <div class="feature-icon bg-denimDeep/10 text-denimDeep">
+                        <i class="fas fa-expand text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Kapasitas Luas</h3>
+                    <p class="text-gray-600">Desain ruang yang luas untuk menyimpan semua kebutuhan harian Anda.</p>
+                </div>
                 
-                <div class="countdown">
-                    <p class="countdown-text">Promo berakhir dalam:</p>
-                    <div class="countdown-timer">
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="hours">23</div>
-                            <div class="countdown-label">Jam</div>
+                <!-- Feature 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition scroll-reveal">
+                    <div class="feature-icon bg-silverAccent/10 text-silverAccent">
+                        <i class="fas fa-palette text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Dua Pilihan Warna</h3>
+                    <p class="text-gray-600">Tersedia dalam warna Light Denim dan Deep Denim yang stylish.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition scroll-reveal">
+                    <div class="feature-icon bg-primary/10 text-primary">
+                        <i class="fas fa-sync-alt text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Gaya Multifungsi</h3>
+                    <p class="text-gray-600">Dapat digunakan sebagai shoulder bag atau crossbody bag untuk berbagai kesempatan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 parallax" style="background-image: url('https://img.kwcdn.com/product/fancy/1b76bbb8-5b79-4517-8e8a-e9baf85d6da1.jpg?imageView2/2/w/800/q/70/format/webp');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-silverAccent font-bold text-lg">GALERI PRODUK</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-3 mb-6">Keindahan dalam Setiap Detail</h2>
+                <p class="max-w-2xl mx-auto text-gray-300">Temukan keunggulan desain dan kualitas premium dari Denim Shoulder Bag</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Gallery Items -->
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/1b76bbb8-5b79-4517-8e8a-e9baf85d6da1.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/1b76bbb8-5b79-4517-8e8a-e9baf85d6da1.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 1" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/93f9a019-615c-4c12-9833-8e6702f17536.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/93f9a019-615c-4c12-9833-8e6702f17536.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 2" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/b19dc77f-c790-4486-8c03-6a6fc43fae5b.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/b19dc77f-c790-4486-8c03-6a6fc43fae5b.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 3" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/96778040-6056-4e26-a049-0c6f480c9e08.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/96778040-6056-4e26-a049-0c6f480c9e08.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 4" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/431a7076-1619-4dd9-b1e6-8529f86ca1c0.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/431a7076-1619-4dd9-b1e6-8529f86ca1c0.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 5" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+                
+                <div class="gallery-item scroll-reveal">
+                    <div class="overflow-hidden rounded-xl zoom-effect cursor-pointer" data-src="https://img.kwcdn.com/product/fancy/8070c888-adf6-44c1-9126-44e5c37e9c91.jpg?imageView2/2/w/800/q/70/format/webp">
+                        <img src="https://img.kwcdn.com/product/fancy/8070c888-adf6-44c1-9126-44e5c37e9c91.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag Angle 6" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Lightbox Container -->
+        <div class="lightbox" id="lightbox">
+            <span class="lightbox-close" id="lightbox-close">&times;</span>
+            <img src="" alt="" class="lightbox-content" id="lightbox-image">
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-silverAccent font-bold text-lg">PENAWARAN TERBAIK</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mt-3 mb-6">Dapatkan Promo Spesial Hari Ini</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Jangan lewatkan kesempatan mendapatkan tas premium dengan harga terbaik</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-gradient-to-br from-denimLight/10 to-denimDeep/10 rounded-2xl p-8 shadow-xl scroll-reveal">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="flex-1">
+                        <div class="relative inline-block">
+                            <img src="https://img.kwcdn.com/product/fancy/3c1030c2-e39d-4104-acae-5a24e970d3dc.jpg?imageView2/2/w/800/q/70/format/webp" alt="Denim Shoulder Bag" class="w-64 mx-auto rounded-xl shadow-lg">
+                            <div class="discount-badge">
+                                <span class="text-xs">Diskon</span>
+                                <span class="text-lg">37%</span>
+                            </div>
                         </div>
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="minutes">59</div>
-                            <div class="countdown-label">Menit</div>
+                        
+                        <div class="flex justify-center gap-4 mt-6">
+                            <div class="w-8 h-8 rounded-full bg-denimLight border-2 border-white shadow"></div>
+                            <div class="w-8 h-8 rounded-full bg-denimDeep border-2 border-white shadow"></div>
                         </div>
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="seconds">59</div>
-                            <div class="countdown-label">Detik</div>
+                        <p class="text-center mt-2 text-gray-700">Pilihan Warna: Light Denim & Deep Denim</p>
+                    </div>
+                    
+                    <div class="flex-1">
+                        <div class="mb-6">
+                            <h3 class="text-2xl font-bold text-primary">Denim Shoulder Bag</h3>
+                            <p class="text-gray-600 mt-2">Tas elegan dengan material sintetis tahan lama, gaya retro chic, dan tekstur halus.</p>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <div class="flex items-end gap-4">
+                                <span class="text-3xl font-bold text-primary">Rp 188.000</span>
+                                <span class="text-xl text-gray-500 line-through">Rp 299.000</span>
+                                <span class="price-tag bg-red-100 text-red-700">Hemat Rp 111.000</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <p class="text-gray-700 font-semibold mb-3">Promo berakhir dalam:</p>
+                            <div class="flex gap-3 justify-center md:justify-start">
+                                <div class="countdown-item">
+                                    <span id="hours">18</span>
+                                    <span class="text-xs">Jam</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span id="minutes">45</span>
+                                    <span class="text-xs">Menit</span>
+                                </div>
+                                <div class="countdown-item">
+                                    <span id="seconds">22</span>
+                                    <span class="text-xs">Detik</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#order" class="block w-full bg-primary hover:bg-secondary text-white font-bold py-4 px-6 rounded-full text-center transition transform hover:scale-[1.02]">
+                            Pesan Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Product Gallery -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Galeri Produk</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://cdn.newfastcdn.com/image/4120779c36bc33c2e7067ff35ab9ea3b67fbb9dc.png" alt="Wire-Free Push-Up Bra" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-name">Wire-Free Push-Up Bra</h3>
-                        <p class="product-description">Desain tanpa kawat yang memberikan kenyamanan maksimal tanpa mengurangi daya tarik.</p>
+
+    <!-- Order Form Section -->
+    <section id="order" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-silverAccent font-bold text-lg">PEMESANAN</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mt-3 mb-6">Form Pemesanan Denim Shoulder Bag</h2>
+                <p class="max-w-2xl mx-auto text-gray-600">Isi data berikut untuk memesan tas premium Anda</p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto glass-effect p-6 md:p-8 rounded-2xl shadow-xl backdrop-blur-lg">
+                <!-- OrderOnline Form Integration -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="denim-bag" data-product-id="68852cb2dfd50c990d068285" id="oo-embed-form-denim-bag-1750" data-origin="orderonline">
+                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({
+                                url: document.location.href,
+                                line: error.line,
+                                stack: error.stack
+                            });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                        ooe('init', '5f119cd08dcbdb2737678706', '68852cb2dfd50c990d068285', '68852cb2dfd50c990d068286', 'oo-embed-form-denim-bag-1750', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+            </div>
+                        </a>
                     </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://cdn.newfastcdn.com/image/c1f2d093c068217366801fb4d6de236421c97dd5-600.jpeg" alt="Wire-Free Push-Up Bra" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-name">Nyaman Sepanjang Hari</h3>
-                        <p class="product-description">Bahan nylon berkualitas tinggi yang lembut dan menyesuaikan dengan bentuk tubuh.</p>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://cdn.newfastcdn.com/image/b1792dc578dc4280f9061478c4a62037bb3028d7.gif" alt="Wire-Free Push-Up Bra" class="product-image">
-                    <div class="product-info">
-                        <h3 class="product-name">Push-Up Alami</h3>
-                        <p class="product-description">Memberikan bentuk yang indah secara alami tanpa kawat yang menyiksa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Features -->
-    <section class="section features">
-        <div class="container">
-            <h2 class="section-title">Keunggulan Produk Kami</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
-                    <h3 class="feature-title">Nyaman Dipakai</h3>
-                    <p class="feature-text">Tanpa kawat yang menusuk, membuat Anda nyaman beraktivitas sepanjang hari.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-tshirt"></i></div>
-                    <h3 class="feature-title">Bahan Berkualitas</h3>
-                    <p class="feature-text">Terbuat dari nylon premium yang lembut, elastis, dan tahan lama.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-medal"></i></div>
-                    <h3 class="feature-title">Push-Up Alami</h3>
-                    <p class="feature-text">Desain khusus yang memberikan efek push-up alami tanpa ketidaknyamanan.</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
-                    <h3 class="feature-title">Pengiriman Cepat</h3>
-                    <p class="feature-text">Pesanan dikirim dalam 1-2 hari kerja dengan packing rapi dan aman.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Size Guide -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Panduan Ukuran</h2>
-            <div style="overflow-x: auto;">
-                <table style="width: 100%; border-collapse: collapse; margin: 2rem 0;">
-                    <thead>
-                        <tr style="background-color: var(--primary); color: white;">
-                            <th style="padding: 1rem; text-align: left;">Ukuran</th>
-                            <th style="padding: 1rem; text-align: left;">Lingkar Dada</th>
-                            <th style="padding: 1rem; text-align: left;">Rekomendasi Berat Badan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr style="border-bottom: 1px solid #eee;">
-                            <td style="padding: 1rem;">M</td>
-                            <td style="padding: 1rem;">± 85 cm</td>
-                            <td style="padding: 1rem;">45-55 kg</td>
-                        </tr>
-                        <tr style="border-bottom: 1px solid #eee;">
-                            <td style="padding: 1rem;">L</td>
-                            <td style="padding: 1rem;">± 92 cm</td>
-                            <td style="padding: 1rem;">55-60 kg</td>
-                        </tr>
-                        <tr>
-                            <td style="padding: 1rem;">XL</td>
-                            <td style="padding: 1rem;">± 102 cm</td>
-                            <td style="padding: 1rem;">60-70 kg</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <p style="text-align: center; color: #666; font-style: italic;">Catatan: karena pengukuran manual sehingga ada error 1-3cm</p>
-        </div>
-    </section>
-    
-    <!-- Testimonials -->
-    <section class="section testimonials">
-        <div class="container">
-            <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Saya sudah mencoba banyak bra tanpa kawat, tapi yang ini benar-benar berbeda. Nyaman dipakai seharian dan bentuknya tetap bagus!"</p>
-                    <p class="testimonial-author">- Sarah, 28 tahun</p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Pengiriman cepat dan produknya sesuai gambar. Bahannya lembut dan tidak gerah. Sudah beli 3 warna berbeda!"</p>
-                    <p class="testimonial-author">- Fatma, 35 tahun</p>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">"Awalnya ragu karena harganya murah, tapi ternyata kualitasnya premium. Sekarang koleksi bra biasa saya sudah pensiun semua."</p>
-                    <p class="testimonial-author">- Rina, 42 tahun</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- FAQ -->
-    <section class="section">
-        <div class="container">
-            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">Apakah produk ini original? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Ya, produk kami 100% original dengan kualitas terbaik. Kami menjamin keaslian setiap produk yang kami jual.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Bagaimana cara memilih ukuran yang tepat? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Anda bisa mengacu pada panduan ukuran yang kami sediakan di atas. Jika masih ragu, bisa menghubungi customer service kami untuk konsultasi ukuran.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Berapa lama waktu pengiriman? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Biasanya pesanan dikirim dalam 1-2 hari kerja dan sampai dalam 2-5 hari kerja tergantung lokasi pengiriman.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Apakah ada garansi? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Kami memberikan garansi 7 hari setelah produk diterima jika terdapat cacat produksi atau tidak sesuai pesanan.</div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">Metode pembayaran apa saja yang tersedia? <i class="fas fa-chevron-down"></i></div>
-                    <div class="faq-answer">Kami menerima transfer bank, e-wallet (OVO, Dana, ShopeePay, dll), dan COD untuk area tertentu.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Order Section -->
-    <section id="order" class="section" style="background-color: var(--gray);">
-        <div class="container">
-            <h2 class="section-title">Pesan Sekarang Sebelum Kehabisan!</h2>
-            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-                <div class="price" style="justify-content: center; margin-bottom: 2rem;">
-                    <span class="old-price" style="color: var(--text);">Rp 320.000</span>
-                    <span class="new-price" style="color: var(--primary);">Rp 178.000</span>
-                </div>
-                
-                <p style="margin-bottom: 2rem; font-size: 1.2rem;">Diskon 45% hanya berlaku untuk 100 pembeli pertama hari ini!</p>
-                
-                <div class="countdown" style="margin: 0 auto 2rem; display: inline-block;">
-                    <p class="countdown-text">Promo berakhir dalam:</p>
-                    <div class="countdown-timer">
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="hours2">23</div>
-                            <div class="countdown-label">Jam</div>
-                        </div>
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="minutes2">59</div>
-                            <div class="countdown-label">Menit</div>
-                        </div>
-                        <div class="countdown-item">
-                            <div class="countdown-number" id="seconds2">59</div>
-                            <div class="countdown-label">Detik</div>
+                    <div class="flex-1">
+                        <div class="flex items-start gap-4">
+                            <div class="bg-denimLight/10 p-4 rounded-full">
+                                <i class="fas fa-shield-alt text-denimLight text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-primary">Transaksi Aman</h4>
+                                <p class="text-gray-600">Data pribadi dan transaksi Anda terlindungi dengan sistem keamanan terbaik</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
-                <a href="https://nava.orderonline.id/wire-free-push-up-bra" class="cta-button" style="margin: 0 auto;">PESAN SEKARANG</a>
-                
-                <p style="margin-top: 2rem; font-size: 0.9rem; color: #666;">Klik tombol di atas untuk langsung diarahkan ke halaman pemesanan resmi kami.</p>
             </div>
         </div>
     </section>
-    
-    <!-- Footer CTA -->
-    <section class="footer-cta">
-        <div class="container">
-            <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Jangan Lewatkan Kesempatan Ini!</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto;">Dapatkan Wire-Free Push-Up Bra dengan diskon 45% hanya hari ini. Stok terbatas!</p>
-            <a href="https://nava.orderonline.id/wire-free-push-up-bra" class="cta-button">PESAN SEKARANG</a>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Navaofficial</h3>
+                    <p class="text-gray-300 mb-4">Brand fashion terpercaya untuk wanita modern sejak 2018.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-tiktok text-xl"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Produk</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Tas Wanita</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Dompet</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Aksesoris</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Koleksi Terbaru</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Bantuan</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Cara Order</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Pengiriman</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">Garansi Produk</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Kontak</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-3 text-gray-300"></i>
+                            <a href="https://wa.me/6281252355305" target="_blank" class="text-gray-300 hover:text-white transition">0812-5235-5305</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-gray-300"></i>
+                            <span class="text-gray-300">cs@navaofficial.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-gray-300"></i>
+                            <span class="text-gray-300">Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">© 2023 Navaofficial. Hak Cipta Dilindungi. Website oleh <a href="#" class="text-silverAccent hover:underline">Tim Marketing</a></p>
+            </div>
         </div>
-    </section>
-    
-    <!-- Popup -->
-    <div class="popup-overlay"></div>
-    <div class="popup">
-        <div class="popup-close"><i class="fas fa-times"></i></div>
-        <h3 class="popup-title">PROMO SPESIAL HARI INI!</h3>
-        <p class="popup-text">Dapatkan diskon 45% untuk Wire-Free Push-Up Bra hanya untuk 50 pembeli pertama hari ini. Jangan lewatkan kesempatan ini!</p>
-        <a href="https://nava.orderonline.id/wire-free-push-up-bra" class="cta-button" style="width: 100%; text-align: center;">PESAN SEKARANG</a>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <div class="sticky-cta lg:hidden">
+        <div class="bg-white border-t border-gray-200 py-4 px-6 shadow-lg">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="font-bold text-primary text-lg">Denim Shoulder Bag</div>
+                    <div class="flex items-center">
+                        <span class="text-lg font-bold text-primary">Rp 188.000</span>
+                        <span class="text-sm text-gray-500 line-through ml-2">Rp 299.000</span>
+                    </div>
+                </div>
+                <a href="#order" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-full transition">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
     </div>
-    
+
     <script>
-        // Countdown Timer
-        function updateCountdown() {
-            const now = new Date();
-            const endOfDay = new Date();
-            endOfDay.setHours(23, 59, 59, 999);
-            
-            const diff = endOfDay - now;
-            
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-            
-            document.getElementById('hours2').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes2').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds2').textContent = seconds.toString().padStart(2, '0');
-        }
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
         
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
         
-        // FAQ Accordion
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.classList.toggle('active');
-                
-                const icon = question.querySelector('i');
-                if (answer.classList.contains('active')) {
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                } else {
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
+        // Scroll Reveal Animation
+        const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+        
+        const scrollRevealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
                 }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        scrollRevealElements.forEach(element => {
+            scrollRevealObserver.observe(element);
+        });
+        
+        // Sticky CTA
+        const stickyCTA = document.querySelector('.sticky-cta');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                stickyCTA.classList.add('active');
+            } else {
+                stickyCTA.classList.remove('active');
+            }
+        });
+        
+        // Lightbox Gallery
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightbox-image');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const galleryItems = document.querySelectorAll('.gallery-item > div');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.getAttribute('data-src');
+                lightboxImage.setAttribute('src', imgSrc);
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
             });
         });
         
-        // Popup
-        setTimeout(() => {
-            document.querySelector('.popup').classList.add('active');
-            document.querySelector('.popup-overlay').classList.add('active');
-        }, 10000);
-        
-        document.querySelector('.popup-close').addEventListener('click', () => {
-            document.querySelector('.popup').classList.remove('active');
-            document.querySelector('.popup-overlay').classList.remove('active');
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
         });
         
-        document.querySelector('.popup-overlay').addEventListener('click', () => {
-            document.querySelector('.popup').classList.remove('active');
-            document.querySelector('.popup-overlay').classList.remove('active');
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Countdown Timer
+        function updateCountdown() {
+            const hoursElement = document.getElementById('hours');
+            const minutesElement = document.getElementById('minutes');
+            const secondsElement = document.getElementById('seconds');
+            
+            let hours = parseInt(hoursElement.textContent);
+            let minutes = parseInt(minutesElement.textContent);
+            let seconds = parseInt(secondsElement.textContent);
+            
+            seconds--;
+            
+            if (seconds < 0) {
+                seconds = 59;
+                minutes--;
+                
+                if (minutes < 0) {
+                    minutes = 59;
+                    hours--;
+                    
+                    if (hours < 0) {
+                        hours = 23;
+                    }
+                }
+            }
+            
+            hoursElement.textContent = hours.toString().padStart(2, '0');
+            minutesElement.textContent = minutes.toString().padStart(2, '0');
+            secondsElement.textContent = seconds.toString().padStart(2, '0');
+        }
+        
+        setInterval(updateCountdown, 1000);
+        
+        // Mobile menu close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
         });
     </script>
 </body>
